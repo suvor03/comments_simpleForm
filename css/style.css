@@ -1,0 +1,119 @@
+.comments {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comments__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+.form__group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form__group input,
+.form__group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+.comments__list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.comment__name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment__date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.comment__text {
+    margin-bottom: 10px;
+}
+
+.comment__actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.comment__actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.comment__actions button svg {
+    width: 20px;
+    height: 20px;
+    fill: #ccc;
+    transition: fill 0.3s ease;
+}
+
+.comment__actions button:hover svg {
+    fill: #007bff;
+}
+
+.comment__actions button.like svg {
+    fill: #f00;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Комментарии</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="script" href="js/script.js"/>
+</head>
+
+<body>
+<div class="comments">
+  <h2 class="comments__title">Комментарии</h2>
+  <form class="comments__form">
+    <div class="form__group">
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" required>
+      <span class="error-message">Пожалуйста, введите имя</span>
+    </div>
+    <div class="form__group">
+      <label for="text">Комментарий</label>
+      <textarea id="text" name="text" required></textarea>
+      <span class="error-message">Пожалуйста, введите комментарий</span>
+    </div>
+    <div class="form__group">
+      <label for="date">Дата</label>
+      <input type="date" id="date" name="date">
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </form>
+  <ul class="comments__list"></ul>
+</div>
+</body>
+</html>
